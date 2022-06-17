@@ -1,0 +1,6 @@
+Plotly
+Streamlit
+pandas
+Pillow
+markupsafe==2.0.1
+Openpyxl
