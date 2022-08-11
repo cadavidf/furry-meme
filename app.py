@@ -5,7 +5,7 @@ from PIL import Image
 
 st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
-#col1, col2 = st.columns(2)
+
 
 image = Image.open('animality logotype official.png')
 print(image)
@@ -16,6 +16,7 @@ st.header('Animality Dashboard')
 st.subheader('Move the slider to select data')
 
 ### --- LOAD DATAFRAME
+col1, col2 = st.columns(2)
 excel_file = 'Survey_Results.xlsx'
 sheet_name = 'DATA'
 
