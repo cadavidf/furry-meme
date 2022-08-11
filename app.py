@@ -60,7 +60,7 @@ bar_chart = px.bar(df_grouped,
                    x='Rating',
                    y='Votes',
                    text='Votes',
-                   color_discrete_sequence = ['#F63366']*len(df_grouped),
+                   color_discrete_sequence = ['#1c82ad']*len(df_grouped),
                    template= 'plotly_white')
 st.plotly_chart(bar_chart)
 
