@@ -5,12 +5,12 @@ from PIL import Image
 
 st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
-col1, col2 = st.columns(2)
+
 
 
 image = Image.open('animality logotype official.png')
 print(image)
-col1.image(image,
+st.image(image,
         caption='Designed by Felipe Cadavid',
         use_column_width=100)
 st.header('Animality Dashboard')
@@ -65,7 +65,7 @@ bar_chart = px.bar(df_grouped,
 st.plotly_chart(bar_chart)
 
 
-col2.dataframe(df)
+st.dataframe(df)
 
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
