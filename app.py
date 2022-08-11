@@ -5,7 +5,8 @@ from PIL import Image
 
 st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
-col1, col2 = st.columns(1)
+col1, col2 = st.columns(2)
+
 
 image = Image.open('animality logotype official.png')
 print(image)
