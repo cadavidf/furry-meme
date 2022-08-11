@@ -5,7 +5,7 @@ from PIL import Image
 
 st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
-
+col1, col2 = st.columns(1)
 
 image = Image.open('animality logotype official.png')
 print(image)
@@ -16,7 +16,7 @@ st.header('Animality Dashboard')
 st.subheader('Move the slider to select data')
 
 ### --- LOAD DATAFRAME
-col1, col2 = st.columns(2)
+
 excel_file = 'Survey_Results.xlsx'
 sheet_name = 'DATA'
 
@@ -64,7 +64,7 @@ bar_chart = px.bar(df_grouped,
 st.plotly_chart(bar_chart)
 
 
-col2.dataframe(df[mask])
+#col2.dataframe(df[mask])
 
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
