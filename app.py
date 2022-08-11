@@ -54,12 +54,16 @@ st.markdown(f'*Available Results: {number_of_result}*')
 df_grouped = df[mask].groupby(by=['Rating']).count()[['Age']]
 df_grouped = df_grouped.rename(columns={'Age': 'Votes'})
 df_grouped = df_grouped.reset_index()
+subset = {"Finance", "Marketing", "Sales", "Logistics", "Purchasing"}
+group_color = {i: '1c88aa' for i in subset}
+
 
 # --- PLOT BAR CHART
 bar_chart = px.bar(df_grouped,
                    x='Rating',
                    y='Votes',
                    text='Votes',
+                   
                    color_discrete_sequence = ['#1c82ad']*len(df_grouped),
                    template= 'plotly_white')
 st.plotly_chart(bar_chart)
@@ -71,7 +75,9 @@ st.plotly_chart(bar_chart)
 pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
                 values='Participants',
-                color_discrete_sequence = ['#1c82ad']*len(df_grouped),
+                color='Departments',
+                color_discrete_sequence= px.colors.qualitative.Alphabet,
+                color_discrete_map= group_color,
                 names='Departments')
 
 st.plotly_chart(pie_chart)
