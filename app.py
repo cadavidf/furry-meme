@@ -71,6 +71,7 @@ st.plotly_chart(bar_chart)
 pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
                 values='Participants',
+                color_discrete_sequence = ['#1c82ad']*len(df_grouped),
                 names='Departments')
 
 st.plotly_chart(pie_chart)
