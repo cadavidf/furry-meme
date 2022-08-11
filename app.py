@@ -7,7 +7,7 @@ st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
 col1, col2 = st.columns(2)
 
-image = Image.open('logo.png')
+image = Image.open('animality logotype official.png')
 print(image)
 col1.image(image,
         caption='Designed by Felipe Cadavid',
