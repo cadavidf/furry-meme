@@ -65,7 +65,7 @@ bar_chart = px.bar(df_grouped,
 st.plotly_chart(bar_chart)
 
 
-col1.dataframe(df[mask])
+#col1.dataframe(df[mask])
 
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
