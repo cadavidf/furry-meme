@@ -13,7 +13,7 @@ print(image)
 col1.image(image,
         caption='Designed by Felipe Cadavid',
         use_column_width=100)
-st.header('Animality Dashboard')
+st.header('Welcome to your Interactive Dashboard')
 st.subheader('Move the slider to select data')
 
 ### --- LOAD DATAFRAME
