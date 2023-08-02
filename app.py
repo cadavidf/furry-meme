@@ -15,6 +15,11 @@ col1.image(image,
         use_column_width=100)
 st.header('Welcome to your Interactive Dashboard')
 st.subheader('Move the slider to select data')
+st.subheader('This is an internal survey from company employes ranking of an activity.')
+st.subheader('You can move the slider from the youngest to the oldest to select the desired range')
+st.subheader('Filter by removing departments.')
+
+
 
 ### --- LOAD DATAFRAME
 
