@@ -7,6 +7,8 @@ st.set_page_config(page_title='Animality Dashboard')
 # --- DISPLAY IMAGE & DATAFRAME
 col1, col2 = st.columns(2)
 
+# --- DEFINE YOUR COLOR SEQUENCE
+color_sequence = ['#232323', '#525252', '#251513']
 
 image = Image.open('animality logotype official.png')
 print(image)
@@ -67,9 +69,8 @@ bar_chart = px.bar(df_grouped,
                    x='Rating',
                    y='Votes',
                    text='Votes',
-                   
-                   color_discrete_sequence = ['#1c82ad']*len(df_grouped),
-                   template= 'plotly_white')
+                   color_discrete_sequence=color_sequence*len(df_grouped), 
+                   template='plotly_white')
 st.plotly_chart(bar_chart)
 
 
