@@ -8,7 +8,7 @@ st.set_page_config(page_title='Animality Dashboard')
 col1, col2 = st.columns(2)
 
 # --- DEFINE YOUR COLOR SEQUENCE
-color_sequence = ['#fcd420', '#525252', '#251513']
+color_sequence = ['#525252', '#fcd420', '#251513']
 
 image = Image.open('animality logotype official.png')
 print(image)
