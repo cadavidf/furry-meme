@@ -13,13 +13,10 @@ print(image)
 col1.image(image,
         caption='Designed by Felipe Cadavid',
         use_column_width=100)
-st.header('Welcome to your Interactive Dashboard')
-st.subheader('Move the slider to select data')
-st.subheader('This is an internal survey from company employes ranking of an activity.')
-
-st.subheader('Quickly determine which age group liked or disliked the activity by moving the slider between the youngest (23yr) and the oldest (65yr)')
-
-st.subheader('Add or remove departments to spot unsatisfied groups. Making Timely decisions is one of the virtues of an excelent manager.')
+st.header('Welcome to your Interactive Dashboard</p>', unsafe_allow_html=True)
+st.markdown('Move the slider to select data</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size: 14px;">Quickly determine which age group liked or disliked the activity by moving the slider between the youngest (23yr) and the oldest (65yr)</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size: 14px;">Add or remove departments to spot unsatisfied groups. Making timely decisions is one of the virtues of an excellent manager.</p>', unsafe_allow_html=True)
 
 
 
