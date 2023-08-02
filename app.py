@@ -15,8 +15,8 @@ col1.image(image,
         use_column_width=100)
 st.header('Welcome to your Interactive Dashboard</p>', unsafe_allow_html=True)
 st.markdown('Move the slider to select data')
-st.markdown('<p style="font-size: 14px;">Quickly determine which age group liked or disliked the activity by moving the slider between the youngest (23yr) and the oldest (65yr)</p>', unsafe_allow_html=True)
-st.markdown('<p style="font-size: 14px;">Add or remove departments to spot unsatisfied groups. Making timely decisions is one of the virtues of an excellent manager.</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size: 10px;">Quickly determine which age group liked or disliked the activity by moving the slider between the youngest (23yr) and the oldest (65yr)</p>', unsafe_allow_html=True)
+st.markdown('<p style="font-size: 12px;">Add or remove departments to spot unsatisfied groups. Making timely decisions is one of the virtues of an excellent manager.</p>', unsafe_allow_html=True)
 
 
 
