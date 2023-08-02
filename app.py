@@ -16,7 +16,7 @@ st.header('DEMO')
 
 st.subheader('⦁This is an dashboard of an internal survey from X company employees ranking of an activity.')
 st.subheader('⦁Quickly determine which age group liked or disliked the activity by moving the slider between the youngest (23yr) and the oldest (65yr)')
-st.subheader('⦁Add or remove departments to spot unsatisfied groups. Making timely decisions is one of the virtues of an excellent manager.')
+st.subheader('⦁Add or remove departments to filter by department.')
 
 st.header('Move the slider to select data')
 
