@@ -8,7 +8,7 @@ st.set_page_config(page_title='Animality Dashboard')
 col1, col2 = st.columns(2)
 
 # --- DEFINE YOUR COLOR SEQUENCE
-color_sequence = ['#525252', '#fcd420', '#251513']
+color_sequence = ['#232323', '#525252', '#251513', '#1c88aa', '#1c82ad']
 
 image = Image.open('animality logotype official.png')
 print(image)
@@ -61,7 +61,7 @@ df_grouped = df[mask].groupby(by=['Rating']).count()[['Age']]
 df_grouped = df_grouped.rename(columns={'Age': 'Votes'})
 df_grouped = df_grouped.reset_index()
 subset = {"Finance", "Marketing", "Sales", "Logistics", "Purchasing"}
-### group_color = {i: '1c88aa' for i in subset}
+group_color = {i: '1c88aa' for i in subset}
 
 
 # --- PLOT BAR CHART
