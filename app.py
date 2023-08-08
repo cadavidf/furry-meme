@@ -78,7 +78,7 @@ st.plotly_chart(bar_chart)
 
 
 #col1.dataframe(df[mask])
-colors_pie = ['#499bbd', '#60a7c5', '#76b4cd', '#8dc0d6', '#f7b176', '#f79e50', '#f7882c', '#f7720a']
+colors_pie = ['#499bbd', '#60a7c5', '#76b4cd', '#f79e50','#8dc0d6', '#f7b176', '#f7882c', '#f7720a']
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
