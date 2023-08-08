@@ -84,7 +84,7 @@ pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
                 values='Participants',
                 color='Departments',
-                color_discrete_sequence= px.colors.qualitative.Alphabet,
+                color_discrete_sequence= colors,
                 color_discrete_map= group_color,
                 names='Departments')
 
