@@ -12,13 +12,13 @@ color_sequence = ['#1c33aa', '#1af3aa', '#251513', '#1c88aa', '#1c82ad']
 
 image = Image.open('animality logotype official.png')
 print(image)
-col1.image(image, caption='Designed by Felipe Cadavid', use_column_width=100)
+col1.image(image, caption='B2B Solutions for Businesses', use_column_width=100)
 
 st.header('DEMO')
 
-st.subheader('⦁This is an dashboard of an internal survey from X company employees ranking of an activity.')
-st.subheader('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
-st.subheader('⦁Add or remove departments to filter by department.')
+st.text('⦁This is an dashboard of an internal survey from X company employees ranking of an activity.')
+st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
+st.text('⦁Add or remove departments to filter by department.')
 
 st.header('Move the slider to select data')
 
