@@ -1,5 +1,6 @@
 import pandas as pd
 import streamlit as st
+import random
 import plotly.express as px
 from PIL import Image
 
@@ -78,13 +79,16 @@ st.plotly_chart(bar_chart)
 
 
 #col1.dataframe(df[mask])
-colors_pie = ['#499bbd', '#f7720a', '#76b4cd', '#f79e50','#8dc0d6', '#f7b176', '#f7882c', '#60a7c5']
+colors_pie = ['#499bbd', '#60a7c5', '#76b4cd', '#8dc0d6', '#f7b176', '#f79e50', '#f7882c', '#f7720a']
+random.shuffle(colors_pie)
+shuffled_colors_pie = colors_pie[:]
+
 # --- PLOT PIE CHART
 pie_chart = px.pie(df_participants,
                 title='Total No. of Participants',
                 values='Participants',
                 color='Departments',
-                color_discrete_sequence= colors_pie,
+                color_discrete_sequence= shuffled_colors_pie,
                 color_discrete_map= group_color,
                 names='Departments')
 
