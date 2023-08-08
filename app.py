@@ -50,7 +50,7 @@ age_selection = st.slider('Age:',
                         max_value= max(ages),
                         value=(min(ages),max(ages)))
 
-department_selection = st.multiselect('Add or Remove Departments by clicking on the X.',
+department_selection = st.multiselect('Remove Departments by clicking on the (X). Add them in the dropdown menu -->',
                                     department,
                                     default=department)
 
