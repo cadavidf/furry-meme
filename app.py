@@ -22,7 +22,7 @@ st.subheader('Title: Employee Ranking Company Activities')
 st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
 st.text('⦁Add or remove departments to filter by department.')
 
-st.header('To select age range,')
+st.header('Select Age Range & Departments')
 st.text('move slider <--->')
 
 ### --- LOAD DATAFRAME
