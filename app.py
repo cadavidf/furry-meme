@@ -60,8 +60,10 @@ st.markdown(f'*Available Results: {number_of_result}*')
 df_grouped = df[mask].groupby(by=['Rating']).count()[['Age']]
 df_grouped = df_grouped.rename(columns={'Age': 'Votes'})
 df_grouped = df_grouped.reset_index()
-subset = {"Finance", "Marketing", "Sales", "Logistics", "Purchasing"}
-group_color = {i: '1c88aa' for i in subset}
+subset = {"Finance", "Marketing", "Sales", "Logistics", "Purchasing"} 
+colors = ['#1c82ad', '#328eb5', '#499bbd', '#60a7c5', '#76b4cd']
+
+group_color = {department: color for department, color in zip(subset, colors)}
 
 
 # --- PLOT BAR CHART
