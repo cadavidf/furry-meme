@@ -23,7 +23,7 @@ st.text('⦁Determine preferences aming gropus by moving the slider between the 
 st.text('⦁Add or remove departments to filter by department.')
 
 st.header('To select age range,')
-st.header('move slider <--->')
+st.text('move slider <--->')
 
 ### --- LOAD DATAFRAME
 
@@ -73,7 +73,7 @@ bar_chart = px.bar(df_grouped,
                    x='Rating',
                    y='Votes',
                    text='Votes',
-                   color_discrete_sequence=group_color, 
+                   color_discrete_sequence=color_sequence*len(df_grouped), 
                    template='plotly_white')
 st.plotly_chart(bar_chart)
 
