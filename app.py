@@ -17,7 +17,7 @@ col1.image(image, caption='B2B Solutions for Businesses', use_column_width=100)
 st.header('DEMO')
 
 st.text('⦁This is an dashboard of an internal survey')
-st.text('Title: Employee Ranking Company Activities')
+st.subheader('Title: Employee Ranking Company Activities')
 st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
 st.text('⦁Add or remove departments to filter by department.')
 
