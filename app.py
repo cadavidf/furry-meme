@@ -16,11 +16,13 @@ col1.image(image, caption='B2B Solutions for Businesses', use_column_width=100)
 
 st.header('DEMO')
 
-st.text('⦁This is an dashboard of an internal survey from X company employees ranking of an activity.')
+st.text('⦁This is an dashboard of an internal survey')
+st.text('Title: Employee's Ranking Company Activities')
 st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
 st.text('⦁Add or remove departments to filter by department.')
 
-st.header('to select age range, move slider from side to side ')
+st.header('To select age range,')
+st.header('move slider <--->')
 
 ### --- LOAD DATAFRAME
 
@@ -47,7 +49,7 @@ age_selection = st.slider('Age:',
                         max_value= max(ages),
                         value=(min(ages),max(ages)))
 
-department_selection = st.multiselect('Department:',
+department_selection = st.multiselect('Add or Remove Departments by clicking on the X.',
                                     department,
                                     default=department)
 
