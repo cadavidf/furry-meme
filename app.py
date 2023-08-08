@@ -20,7 +20,7 @@ st.text('⦁This is an dashboard of an internal survey from X company employees 
 st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
 st.text('⦁Add or remove departments to filter by department.')
 
-st.header('Move the slider to select data')
+st.header('to select age range, move slider from side to side ')
 
 ### --- LOAD DATAFRAME
 
