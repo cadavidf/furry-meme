@@ -17,13 +17,8 @@ col1.image(image, caption='B2B Solutions for Businesses', use_column_width=100)
 
 st.header('DEMO Title: Employee Ranking and Company Activites Dashboard')
 
-st.text('⦁This is an dashboard of an internal survey')
-st.subheader('Title: Employee Ranking Company Activities')
-st.text('⦁Determine preferences aming gropus by moving the slider between the 23yr/o and the 63yr/o')
-st.text('⦁Add or remove departments to filter by department.')
-
-st.header('Select Age Range & Departments')
-st.text('move slider <--->')
+st.text('⦁ Determine Preferences among Groups - Adjust Age Range Move the slider between 23 years old and 63 years old to analyze preferences among different age groups.')
+st.text('⦁ Filter by Departments Add or remove departments to focus on specific areas within the company.')
 
 ### --- LOAD DATAFRAME
 
@@ -50,14 +45,14 @@ age_selection = st.slider('Age:',
                         max_value= max(ages),
                         value=(min(ages),max(ages)))
 
-department_selection = st.multiselect('Remove Departments by clicking on the (X). Add them in the dropdown menu -->',
+department_selection = st.multiselect('Departments: Remove Departments by clicking on the (X). Add them in the dropdown menu:',
                                     department,
                                     default=department)
 
 # --- FILTER DATAFRAME BASED ON SELECTION
 mask = (df['Age'].between(*age_selection)) & (df['Department'].isin(department_selection))
 number_of_result = df[mask].shape[0]
-st.markdown(f'*Available Results: {number_of_result}*')
+st.markdown(f'Available Results: {number_of_result}')
 
 # --- GROUP DATAFRAME AFTER SELECTION
 df_grouped = df[mask].groupby(by=['Rating']).count()[['Age']]
