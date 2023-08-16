@@ -15,7 +15,7 @@ image = Image.open('animality logotype official.png')
 print(image)
 col1.image(image, caption='B2B Solutions for Businesses', use_column_width=100)
 
-st.header('DEMO')
+st.header('DEMO Title: Employee Ranking and Company Activites Dashboard')
 
 st.text('⦁This is an dashboard of an internal survey')
 st.subheader('Title: Employee Ranking Company Activities')
